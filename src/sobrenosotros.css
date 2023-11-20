@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo de la barra de navegación */
+  .navegacion {
+    background-color: rgb(29, 27, 27);
+    font-size:30px ;
+  }
+  
+  .navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Ocupar el 100% del ancho de la barra de navegación */
+  }
+  
+  .navegacion li {
+    display: inline;
+  }
+  
+  .navegacion a {
+    text-decoration: none;
+    color: #f3f3f3; /* Cambia esto según tus necesidades */
+    padding: 5px;
+    display: block;
+  }
+  
+  /* Hover abajo verde */
+  .navegacion a:hover {
+    border-bottom: 3px solid #00ff00; /* Verde */
+  }

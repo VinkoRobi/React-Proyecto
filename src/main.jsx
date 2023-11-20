@@ -1,10 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+ // import Home from './HOME.jsx'
 import './index.css'
+import Sobrenosotros from './Sobrenosotros'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Sobrenosotros/>
   </React.StrictMode>,
 )
+ //< Home/>
