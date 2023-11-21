@@ -1,6 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
+    max-width: 500%;
+    height: 1px;
   }
   
   /* Estilo de la barra de navegación */
@@ -33,3 +35,38 @@ body, html {
   .navegacion a:hover {
     border-bottom: 3px solid #00ff00; /* Verde */
   }
+  .titulo{
+    color: white;
+    margin: 0;
+    padding-left: 50px ;
+  }
+  .titulo-sobre-nosotros{
+    color: #457c2c; 
+    font-size: 60px;
+    margin-left:30px ;
+    margin-top: 10px;
+  }
+  .titulo-sobre-nosotros::after{
+    content: "";
+    margin-top: 8px;
+    display: block;
+    width: 10%; /* Ajusta el ancho de la barra según tus necesidades */
+    height: 3px; /* Ajusta la altura de la barra según tus necesidades */
+    background-color: #457c2c; 
+  }
+  .parrafo-sobre-nosotros{
+    padding-bottom: 1.25rem;
+    font-size: 1.075rem;
+    color: #00ff00;
+    margin-left: 30%;
+    margin-bottom: 100%;
+    width: 400px;
+    color: #666;
+    word-wrap: break-word;
+    word-break: break-word;
+    letter-spacing: 1;
+    font-family: Metropolis,Metropolis-Fallback,sans-serif;
+    line-height: 1.6;
+    font-style: normal;
+}
+  
