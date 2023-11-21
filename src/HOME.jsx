@@ -7,7 +7,7 @@ const Home = () => {
       <header>
         
         <nav className='navegacion'>
-         \\<h1 className='titulo'>Don Makai</h1>
+         <h1 className='titulo'>Don Makai</h1>
           <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Sobre Nosotros</a></li>
