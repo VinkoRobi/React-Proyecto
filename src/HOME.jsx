@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-//import reactLogo from './assets/react.svg';
+import React from "react";
+import ReactDOM from 'react-dom/client'
+import { Link } from "react-router-dom";
 import './App.css';
 const Home = () => {
   return (
@@ -9,17 +10,21 @@ const Home = () => {
         <nav className='navegacion'>
          <h1 className='titulo'>Don Makai</h1>
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/sobrenosotros">Sobre Nosotros</Link></li>
+          <li><Link to="/productos">Productos</Link></li>
+          <li><Link to="/contacto">Contacto</Link></li>
+
           </ul>
           
         </nav>
         <div><img   className='imagen' src="https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000017-adfffae001/DON.webp?ph=19e3327c9f" alt="logo" /></div>
 
         <div className='menucontenedor'><h1 className='tmenu'>Menú:</h1>
-        <button className='boton-menu'>Descubre Nuestros Productos</button>
+        <button className="boton-menu">
+        <Link to="/sobrenosotros">Descubre Nuestros Productos</Link>
+        </button>
+
         </div>
         <div className='menu-donde-comprar'>
           <h1 className='titulo-donde-comprar'>¿dónde comprar?</h1>

@@ -1,12 +1,39 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
- // import Home from './HOME.jsx'
-import './index.css'
-import Sobrenosotros from './Sobrenosotros'
+// En tu componente principal (por ejemplo, App.js o index.js)
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Sobrenosotros/>
-  </React.StrictMode>,
-)
- //< Home/>
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import Home from './HOME';
+import Sobrenosotros from './Sobrenosotros';
+
+const App = () => {
+  return (
+       <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobrenosotros" element={<Sobrenosotros />} />
+        {/* Comenta o elimina las siguientes líneas si no necesitas estos componentes */}
+        {/* <Route path="/productos" element={<Productos />} />
+        <Route path="/contacto" element={<Contacto />} /> */}
+      </Routes>
+    </Router>
+
+    
+   
+  );
+};
+
+const rootElement = document.getElementById('root');
+
+ReactDOM.render(<App />, rootElement);
+
+
+export default App;
+
+
+
