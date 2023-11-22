@@ -59,6 +59,9 @@ body, html {
   background-color: #457c2c;
   border: #457c2c;
   border-radius: 50px;
+  cursor: pointer;
+  outline: auto;
+  border: none;
   height: 80px;
   width: 500px;
   color: white;

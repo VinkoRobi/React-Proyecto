@@ -35,38 +35,63 @@ body, html {
   .navegacion a:hover {
     border-bottom: 3px solid #00ff00; /* Verde */
   }
-  .titulo{
-    color: white;
-    margin: 0;
-    padding-left: 50px ;
-  }
-  .titulo-sobre-nosotros{
-    color: #457c2c; 
-    font-size: 60px;
-    margin-left:30px ;
-    margin-top: 10px;
-  }
-  .titulo-sobre-nosotros::after{
-    content: "";
-    margin-top: 8px;
+ .titulo-sobrenosotros{
+  color: #457c2c;
+  font-size: 50px;
+  margin-left: 100px;
+  margin-top: 50px!important;
+}
+.titulo-sobrenosotros::after{
+
+    content: "_";
     display: block;
-    width: 10%; /* Ajusta el ancho de la barra según tus necesidades */
-    height: 3px; /* Ajusta la altura de la barra según tus necesidades */
-    background-color: #457c2c; 
+    margin-top: -30px; /* Ajusta el valor negativo según tus necesidades */
   }
-  .parrafo-sobre-nosotros{
+  .parrafo{
     padding-bottom: 1.25rem;
-    font-size: 1.075rem;
-    color: #00ff00;
-    margin-left: 30%;
-    margin-bottom: 100%;
-    width: 400px;
-    color: #666;
+    padding: 0 0 0.875rem;
+    margin: 0;
+    font-size: 25px;
+    width: 30%;
+    margin-top: -30px!important;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     word-wrap: break-word;
     word-break: break-word;
-    letter-spacing: 1;
-    font-family: Metropolis,Metropolis-Fallback,sans-serif;
-    line-height: 1.6;
-    font-style: normal;
-}
-  
+    font-weight: 400;
+    text-align: right;
+     margin-right: 0;
+     margin-left: 50%;
+    color: #666;
+  }
+
+  .imagen1{
+    margin-left: 10%;
+    width: 70%;
+    height: 55.20879120879%;
+    position: absolute;
+   border-radius: 5px;
+  }
+  .imagen2{
+    height: 450px;
+    margin-top: 30%;
+    margin-left: 10%;
+    border-radius: 5px;
+  }
+  .parrafo2{
+    margin-top: -20%;
+    margin-left: 50%;
+  }
+  .titulo2{
+    font-size: 3rem;
+    color: #457c2c;
+
+  }
+  .parrafo-ods{
+    padding-bottom: 1.25rem;
+    color: #666;
+    font-size: 25px;
+  }
