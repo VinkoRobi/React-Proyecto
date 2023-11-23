@@ -1,6 +1,7 @@
 // En tu componente principal (por ejemplo, App.js o index.js)
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Productos from './productos';
 import {
   BrowserRouter as Router,
   Routes,
@@ -17,8 +18,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/sobrenosotros" element={<Sobrenosotros />} />
         {/* Comenta o elimina las siguientes líneas si no necesitas estos componentes */}
-        {/* <Route path="/productos" element={<Productos />} />
-        <Route path="/contacto" element={<Contacto />} /> */}
+         <Route path="/productos" element={<Productos />} />
+   
       </Routes>
     </Router>
 
@@ -36,3 +37,4 @@ export default App;
 
 
 
+//      //<Route path="/contacto" element={<Contacto />} > */
