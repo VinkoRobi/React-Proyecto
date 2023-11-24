@@ -13,6 +13,7 @@ const Sobrenosotros = () => {
           <li><Link to="/sobrenosotros">Sobre Nosotros</Link></li>
           <li><Link to="/productos">Productos</Link></li>
           <li><Link to="/contacto">Contacto</Link></li>
+          <li><Link to ='/cesta'>Cesta</Link></li>
         </ul>
       </nav>
       

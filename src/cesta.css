@@ -1,0 +1,75 @@
+.navegacion {
+    background-color: rgb(29, 27, 27);
+    font-size:30px ;
+  }
+  
+  .navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Ocupar el 100% del ancho de la barra de navegación */
+  }
+  
+  .navegacion li {
+    display: inline;
+  }
+  
+  .navegacion a {
+    text-decoration: none;
+    color: #f3f3f3; /* Cambia esto según tus necesidades */
+    padding: 5px;
+    display: block;
+  }
+  
+  /* Hover abajo verde */
+  .navegacion a:hover {
+    border-bottom: 3px solid #00ff00; /* Verde */
+  }
+  .titulo-cesta{
+    color: #457c2c;
+    font-size: 50px;
+  }
+  .titulo-cesta::after{
+    display: block;
+    margin-left: 8.5%;
+    content: "______";
+    margin-top: -50px;
+  }
+  .cesta-compras{
+    margin-left: 40%;
+  }
+  .ban{
+    font-size: 30px;
+    color: #666;
+    margin-left: -90px;
+  }
+  .vacia{
+    font-size: 30px;
+    font-weight: bold;
+    color: #222222;
+    margin-left: 5%;
+    margin-bottom: 0;
+  }
+  .cambialo{
+     font-size: 20px ;
+     margin-left: 3%;
+  }
+  .boton-cesta{
+    background-color: #457c2c;
+    border-radius: 40px;
+    height: 70px;
+    width: 20%;
+    
+    color: white;
+    font-size: 20px;
+    margin-left: 5%;
+  }
+  .boton-cesta Link:visited{
+    text-decoration: none;
+  }
+  a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: inherit; /* Heredar el color del texto de su contenedor */
+}

@@ -6,7 +6,7 @@ body, html {
 
 /* Estilo de la barra de navegación */
 .navegacion {
-  background-color: rgb(29, 27, 27);
+  background-color: rgb(65, 65, 65);
   font-size:30px ;
 }
 
@@ -43,6 +43,7 @@ body, html {
   align-items: center;
   justify-content: center;
   margin: auto;
+  width: 40%;
   margin-left: 30%;
   height: 700px;
 }
@@ -53,6 +54,14 @@ body, html {
   padding-top:10px;
   padding-left: 40px; 
 
+}
+
+
+
+
+a {
+  text-decoration: none; /* Eliminar subrayado */
+  color: inherit; /* Heredar el color del texto de su contenedor */
 }
 .boton-menu{
   margin-left: 35%;

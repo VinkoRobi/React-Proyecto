@@ -9,7 +9,11 @@ import {
 } from "react-router-dom";
 import Contacto from './contacto'
 import Home from './HOME';
+import Cesta from './cesta'
 import Sobrenosotros from './Sobrenosotros';
+
+import {products} from './productos.json';
+
 
 const App = () => {
   return (
@@ -18,7 +22,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/sobrenosotros" element={<Sobrenosotros />} />
         <Route path = "/contacto" element = {<Contacto/>}/>
-         <Route path="/productos" element={<Productos />} />
+         <Route path="/productos" element={<Productos products={products} />} />
+         <Route path="/cesta" element={<Cesta />} />
    
       </Routes>
     </Router>
