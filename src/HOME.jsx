@@ -22,7 +22,7 @@ const Home = () => {
 
         <div className='menucontenedor'><h1 className='tmenu'>Menú:</h1>
         <button className="boton-menu">
-        <Link to="/sobrenosotros">Descubre Nuestros Productos</Link>
+        <Link to="/productos">Descubre Nuestros Productos</Link>
         </button>
 
         </div>

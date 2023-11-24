@@ -7,7 +7,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
+import Contacto from './contacto'
 import Home from './HOME';
 import Sobrenosotros from './Sobrenosotros';
 
@@ -17,7 +17,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobrenosotros" element={<Sobrenosotros />} />
-        {/* Comenta o elimina las siguientes líneas si no necesitas estos componentes */}
+        <Route path = "/contacto" element = {<Contacto/>}/>
          <Route path="/productos" element={<Productos />} />
    
       </Routes>
