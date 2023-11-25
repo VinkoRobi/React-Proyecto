@@ -12,7 +12,7 @@
        {
           "id":2,
           "title":"Filete de Pescado a la Parrilla con Esparragos",
-          "description":"",
+          "category":"Platos Fuertes",
           "price":16.00,
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000093-1e7621e763/700/slightly-grilled-fish-with-salad-and-asparagus-photo.webp?ph=19e3327c9f"
@@ -21,7 +21,7 @@
        {
           "id":3,
           "title":"Papa asada",
-          "description":"",
+          "category":"Porciones",
           "price":3.00,
           "images":[
             "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000077-7c7db7c7dc/700/imagen_2023-11-10_194756675.webp?ph=19e3327c9f"
@@ -30,9 +30,8 @@
        {
           "id":4,
           "title":"Ensalada de Pollo a la Barbacoa",
-          "description":"",
           "price":11.00,
-          "category":"",
+          "category":"Ensaladas",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000075-9d00d9d00f/700/Ensalada%20de%20Pollo%20a%20la%20Barbacoa.webp?ph=19e3327c9f"
           ]
@@ -40,9 +39,8 @@
        {
           "id":5,
           "title":"Salmon al Horno Ensalada de Quinoa",
-          "description":"OPPO F19 is officially announced on April 2021.",
           "price":20.00,
-          "category":"",
+          "category":"Platos Fuertes",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000073-38aab38aad/700/Salm%C3%B3n%20al%20Horno%20con%20Ensalada%20de%20Quinoa.webp?ph=19e3327c9f"
           ]
@@ -51,7 +49,7 @@
           "id":6,
           "title":"Pollo a la Parrila con Verduras Asadas",
           "price":17.00,
-          "category":"",
+          "category":"Platos Fuertes",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000069-6d08b6d08d/700/parrillada-de-verduras-y-pollo-1.webp?ph=19e3327c9f"
           ]
@@ -60,7 +58,7 @@
           "id":7,
           "title":"Estofdado de Res",
           "price":18.00,
-          "category":"",
+          "category":"Platos Fuertes",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000063-cfae1cfae2/450/res%20estofado%202.webp?ph=19e3327c9f"
           ]
@@ -69,7 +67,7 @@
           "id":8,
           "title":"Salmon",
           "price":8.00,
-          "category":"",
+          "category":"Porciones",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000059-039380393a/450/images.webp?ph=19e3327c9f"
           ]
@@ -78,7 +76,7 @@
           "id":9,
           "title":"Pollo a la plancha",
           "price":6.00,
-          "category":"",
+          "category":"Porciones",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000057-7d4cb7d4cc/700/istockphoto-172900971-612x612.webp?ph=19e3327c9f"
           ]
@@ -87,7 +85,7 @@
           "id":10,
           "title":"Ensalada rusa",
           "price":5.00,
-          "category":"",
+          "category":"Ensaladas",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000053-583f4583f5/700/Ensalada_Rusa_Recipes_800x800.webp?ph=19e3327c9f"
           ]
@@ -96,7 +94,7 @@
           "id":11,
           "title":"zamburinas en salsa de aguacate y jalapenos",
           "price":5.00,
-          "category":"",
+          "category":"Entradas",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000051-04e2104e23/WhatsApp%20Image%202023-11-09%20at%2011.00.39.webp?ph=19e3327c9f"
           ]
@@ -105,7 +103,7 @@
           "id":12,
           "title":"Agua",
           "price":10.00,
-          "category":"",
+          "category":"Bebidas",
 
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000049-28e8028e82/700/imagen_2023-11-10_185304081.webp?ph=19e3327c9f"
@@ -114,9 +112,8 @@
        {
           "id":13,
           "title":"Ensalada Coleslaw",
-          "description":"",
           "price":5.00,
-          "category":"",
+          "category":"Ensaladas",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000047-7a70e7a70f/450/Unknown.webp?ph=19e3327c9f"
           ]
@@ -125,7 +122,7 @@
           "id":14,
           "title":"Limonada",
           "price":1.50,
-          "category":"",
+          "category":"Bebidas",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000043-04b9004b91/700/imagen_2023-11-10_185119641.webp?ph=19e3327c9f"
           ]
@@ -134,7 +131,7 @@
           "id":15,
           "title":"Ensalada de la casa",
           "price":5.50,
-          "category":"",
+          "category":"Ensaladas",
           
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000041-4622d4622e/700/Ensalada-de-lechuga-con-limon-y-cilantro.webp?ph=19e3327c9f"
@@ -144,7 +141,7 @@
           "id":16,
           "title":"Dip de hummus de garbanzo",
           "price":5.00,
-          "category":"",
+          "category":"Entradas",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000035-e714be714c/700/WhatsApp%20Image%202023-11-09%20at%2010.57.35.webp?ph=19e3327c9f"
           ]
@@ -153,7 +150,7 @@
           "id":17,
           "title":"Ensalada de Naranja",
           "price":7.00,
-          "category":"",
+          "category":"Bebidas",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000033-788af788b0/700/411a4761f551b276be3b0d82d7ba0ee5.jpg-3.webp?ph=19e3327c9f"
           ]
@@ -162,6 +159,7 @@
           "id":18,
           "title":"Ceviche de Pescado",
           "price":12,
+          "category":"Entradas",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000055-1710e1710f/ceviche%20de%20pescado%20.webp?ph=19e3327c9f"
           ]
@@ -170,7 +168,7 @@
           "id":19,
           "title":"Jugo de Naranja",
           "price":1.50,
-          "category":"",
+          "category":"Bebidas",
           "images":[
              "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000027-583b4583b5/700/imagen_2023-11-10_181852054.webp?ph=19e3327c9f"
           ]
@@ -179,7 +177,7 @@
         "id":20,
         "title":"Jugo de Mora",
         "price":1.50,
-        "category":"",
+        "category":"Bebidas",
         "images":[
             "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000029-92cb092cb1/700/imagen_2023-11-10_182017217.webp?ph=19e3327c9f"
         ]
@@ -187,7 +185,7 @@
        {"id":21,
        "title":"Jugo de Sandia",
        "price":1.50,
-       "category":"",
+       "category":"Bebidas",
        "images":[
            "https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000031-665ae665af/700/imagen_2023-11-10_182239198.webp?ph=19e3327c9f"
        ]}

@@ -106,3 +106,13 @@ p{
   font-size: 20px;
   color: #302f2f;
 }
+.carrito{
+  width: 30%;
+  margin-left: 25%;
+  color: #00ff00;
+  background-color: #457c2c;
+
+}
+.carrito:hover{
+  color: red;
+}
