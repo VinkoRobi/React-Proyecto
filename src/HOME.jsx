@@ -2,23 +2,14 @@ import React from "react";
 import ReactDOM from 'react-dom/client'
 import { Link } from "react-router-dom";
 import './App.css';
+import NavBar from './NavBar';
+
 const Home = () => {
   return (
    
       <header>
         
-        <nav className='navegacion'>
-         <h1 className='titulo'>Don Makai</h1>
-          <ul>
-          <li><Link to="/">Inicio</Link></li>
-          <li><Link to="/sobrenosotros">Sobre Nosotros</Link></li>
-          <li><Link to="/productos">Productos</Link></li>
-          <li><Link to="/contacto">Contacto</Link></li>
-          <li><Link to ='/cesta'>Cesta</Link></li>
-
-          </ul>
-          
-        </nav>
+       <NavBar/>
         <div><img   className='imagen' src="https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000017-adfffae001/DON.webp?ph=19e3327c9f" alt="logo" /></div>
 
         <div className='menucontenedor'><h1 className='tmenu'>Menú:</h1>

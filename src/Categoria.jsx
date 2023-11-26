@@ -2,13 +2,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AddToCartIcon } from "./Icons";
+import NavBar from './NavBar'
 
   const Categoria = ({ category, products }) => {
     // Filtra los productos por la categoría seleccionada
     const productosCategoria = products.filter(producto => producto.category === category);
   
     return (
+
       <div>
+        <NavBar/>
         <h2 className="titulo22">{category}</h2>
         <div className="fotos-productos">
           <div className="primera-fila">

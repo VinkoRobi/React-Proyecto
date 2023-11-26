@@ -1,7 +1,10 @@
+// Productos.js
 import React from "react";
 import { Link } from "react-router-dom";
 import './productos.css';
 import { AddToCartIcon } from "./Icons";
+import NavBar from './NavBar';
+
 
 const Productos = ({ products }) => {
   const categoriasUnicas = [...new Set(products.map((producto) => producto.category))];
@@ -9,16 +12,7 @@ const Productos = ({ products }) => {
   return (
     <div>
       <header>
-        <nav className='navegacion'>
-          <h1 className='titulo'>Don Makai</h1>
-          <ul>
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/sobrenosotros">Sobre Nosotros</Link></li>
-            <li><Link to="/productos">Productos</Link></li>
-            <li><Link to="/contacto">Contacto</Link></li>
-            <li><Link to='/cesta'>Cesta</Link></li>
-          </ul>
-        </nav>
+      <NavBar />
         <h1 className="titulo22">Productos</h1>
         <div className="botones-comidas">
           {categoriasUnicas.map((categoria) => (
