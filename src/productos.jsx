@@ -1,18 +1,26 @@
-// Productos.js
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";  // Asegúrate de importar useNavigate
 import './productos.css';
-import { AddToCartIcon } from "./Icons";
 import NavBar from './NavBar';
-
+import { AddToCartIcon } from "./Icons";
+import { useCarrito } from './CarritoContext';
 
 const Productos = ({ products }) => {
   const categoriasUnicas = [...new Set(products.map((producto) => producto.category))];
+  const { agregarProductoAlCarrito } = useCarrito();
+  const navigate = useNavigate();  // Asegúrate de importar useNavigate
+
+  const agregarAlCarrito = (producto) => {
+    agregarProductoAlCarrito(producto);
+    // Redirigir al usuario al carrito después de agregar al carrito
+    navigate('/cesta');
+  };
+  
 
   return (
     <div>
       <header>
-      <NavBar />
+        <NavBar />
         <h1 className="titulo22">Productos</h1>
         <div className="botones-comidas">
           {categoriasUnicas.map((categoria) => (
@@ -35,7 +43,8 @@ const Productos = ({ products }) => {
               <p>{producto.title}</p>
               <p>Precio: ${producto.price}</p>
               <div>
-                <button className="carrito">
+                {/* Agregar el producto al carrito al hacer clic en el botón */}
+                <button className="carrito" onClick={() => agregarAlCarrito(producto)}>
                   <AddToCartIcon />
                 </button>
               </div>

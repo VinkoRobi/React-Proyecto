@@ -1,6 +1,7 @@
 // NavBar.js
 import React from "react";
 import { Link } from "react-router-dom";
+import { CartIcon } from "./Icons";
 
 const NavBar = () => {
   return (
@@ -11,7 +12,11 @@ const NavBar = () => {
         <li><Link to="/sobrenosotros">Sobre Nosotros</Link></li>
         <li><Link to="/productos">Productos</Link></li>
         <li><Link to="/contacto">Contacto</Link></li>
-        <li><Link to='/cesta'>Cesta</Link></li>
+        <li>
+          <Link to='/cesta' className='cesta-link'>
+            Cesta <span className='icono-cesta'><CartIcon /></span>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

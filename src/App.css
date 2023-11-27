@@ -149,3 +149,105 @@ a {
 .menu-donde-comprar{
   margin-top: 50px;
 }
+/* Estilos para el icono del carrito */
+.carrito-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Ajusta según sea necesario */
+}
+
+/* Ajusta según sea necesario para el tamaño y color del icono */
+svg {
+  width: 24px;
+  height: 24px;
+  fill: #333; /* Color del icono */
+}
+
+/* Estilo adicional para resaltar el icono al pasar el ratón por encima */
+.carrito-container:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+/* Puedes ajustar estos estilos según tus preferencias */
+.cesta-link {
+  color: #ffffff; /* Color del texto */
+  text-decoration: none; /* Quitar el subrayado del enlace */
+  padding: 10px; /* Espaciado interno */
+ /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.icono-cesta {
+  margin-left: 5px; /* Ajustar el margen izquierdo entre el texto y el icono */
+}
+/* cesta.css */
+/* Estilo del contenedor de la cesta */
+.cesta-container {
+  margin: 20px;
+}
+
+/* Estilo de la lista de productos en la cesta */
+.cesta-lista {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo de cada ítem en la cesta */
+.cesta-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* Estilo de la imagen del producto en la cesta */
+.cesta-imagen {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Otros estilos para los textos y enlaces, ajusta según sea necesario */
+.cesta-titulo {
+  font-size: 18px;
+  margin: 0;
+}
+
+.cesta-precio {
+  font-size: 30px;
+  color: #457c2c;
+}
+
+.cesta-cantidad {
+  font-size: 16px;
+}
+
+.cesta-total {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.cesta-seguir-comprando {
+  display: inline-block;
+  padding: 10px;
+  background-color: #457c2c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.imgs{
+  height: 300px;
+  width: 300px;
+}
+.cesta-de-compras{
+  color: #457c2c;
+  margin-left: 40%;
+  font-size: 50px;
+}
+.imgs{
+  margin-left: 40%;
+}
+.ppc{
+  margin-left: 40%;
+}
