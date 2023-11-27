@@ -19,7 +19,7 @@ const Home = () => {
 
         </div>
         <div className='menu-donde-comprar'>
-          <h1 className='titulo-donde-comprar'>¿dónde comprar?</h1>
+          <h1 className='titulo-donde-comprar'>¿Dónde comprar?</h1>
           <p className='parrafo-donde-comprar'> 
           Samborondón, Guayas, 090101.
           <br />

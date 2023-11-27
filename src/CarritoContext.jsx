@@ -1,49 +1,46 @@
 // CarritoContext.jsx
-import React, { createContext, useReducer, useContext } from 'react';
+import React, { createContext, useContext, useReducer } from 'react';
 
 const CarritoContext = createContext();
 
-const ACTIONS = {
-  AGREGAR_PRODUCTO: 'agregar_producto',
-  ELIMINAR_PRODUCTO: 'eliminar_producto',
-  VACIAR_CARRITO: 'vaciar_carrito',
+const initialState = {
+  productos: [],
 };
 
-const carritoReducer = (estado, action) => {
+const carritoReducer = (state, action) => {
   switch (action.type) {
-    case ACTIONS.AGREGAR_PRODUCTO:
-      return [...estado, action.producto];
-    case ACTIONS.ELIMINAR_PRODUCTO:
-      return estado.filter((item) => item.id !== action.producto.id);
-    case ACTIONS.VACIAR_CARRITO:
-      return [];
+    case 'AGREGAR_PRODUCTO':
+      return {
+        ...state,
+        productos: [...state.productos, action.payload],
+      };
+    case 'ELIMINAR_PRODUCTO':
+      return {
+        ...state,
+        productos: state.productos.filter(producto => producto.id !== action.payload.id),
+      };
     default:
-      return estado;
+      return state;
   }
 };
 
 const CarritoProvider = ({ children }) => {
-  const [carrito, dispatch] = useReducer(carritoReducer, []);
+  const [state, dispatch] = useReducer(carritoReducer, initialState);
 
   const agregarProductoAlCarrito = (producto) => {
-    dispatch({ type: ACTIONS.AGREGAR_PRODUCTO, producto });
+    dispatch({ type: 'AGREGAR_PRODUCTO', payload: producto });
   };
 
   const eliminarProductoDelCarrito = (producto) => {
-    dispatch({ type: ACTIONS.ELIMINAR_PRODUCTO, producto });
-  };
-
-  const vaciarCarrito = () => {
-    dispatch({ type: ACTIONS.VACIAR_CARRITO });
+    dispatch({ type: 'ELIMINAR_PRODUCTO', payload: producto });
   };
 
   return (
     <CarritoContext.Provider
       value={{
-        carrito,
+        productos: state.productos,
         agregarProductoAlCarrito,
         eliminarProductoDelCarrito,
-        vaciarCarrito,
       }}
     >
       {children}
@@ -54,7 +51,7 @@ const CarritoProvider = ({ children }) => {
 const useCarrito = () => {
   const context = useContext(CarritoContext);
   if (!context) {
-    throw new Error('useCarrito debe ser utilizado dentro de un CarritoProvider');
+    throw new Error('useCarrito debe usarse dentro de un CarritoProvider');
   }
   return context;
 };

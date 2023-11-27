@@ -37,35 +37,32 @@ body, html {
   }
  .titulo-sobrenosotros{
   color: #457c2c;
-  font-size: 50px;
-  margin-left: 100px;
-  margin-top: 50px!important;
+  font-size: 80px;
+  margin-left: 50px;
+  margin-top: 80px!important;
 }
 .titulo-sobrenosotros::after{
 
     content: "_";
     display: block;
-    margin-top: -30px; /* Ajusta el valor negativo según tus necesidades */
+    margin-top: -50px; /* Ajusta el valor negativo según tus necesidades */
   }
   .parrafo{
-    padding-bottom: 1.25rem;
-    padding: 0 0 0.875rem;
-    margin: 0;
-    font-size: 25px;
-    width: 30%;
-    margin-top: -30px!important;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    word-wrap: break-word;
-    word-break: break-word;
-    font-weight: 400;
-    text-align: right;
-     margin-right: 0;
-     margin-left: 50%;
+   align-items: center;
+   margin: 0;
+   justify-content: center;
+   display:f ;
+   margin-top: -9%;
+  }
+
+  .inseider{
     color: #666;
+    width: 45%;
+    align-items: right;
+    font-size: 40px;
+    margin-left: 40%;
+    margin-top: 10px;
+    
   }
 
   .imagen1{
@@ -77,6 +74,7 @@ body, html {
   }
   .imagen2{
     height: 450px;
+    width: 30%;
     margin-top: 30%;
     margin-left: 10%;
     border-radius: 5px;
@@ -88,11 +86,16 @@ body, html {
   .titulo2{
     font-size: 3rem;
     color: #457c2c;
-    margin-left: -1px;
+    margin-left: -10px;
+    margin-bottom: 40px;
+    margin-top: -465px;
 
   }
   .parrafo-ods{
     padding-bottom: 1.25rem;
     color: #666;
     font-size: 25px;
+  }
+  .imagenes{
+    margin-top: 80px;
   }

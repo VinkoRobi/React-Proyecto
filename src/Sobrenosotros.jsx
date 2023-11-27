@@ -17,14 +17,18 @@ const Sobrenosotros = () => {
         </ul>
       </nav>
       
-        <h1 className='titulo-sobrenosotros'>Sobre nosotros</h1>
+      <h1 className='titulo-sobrenosotros'>Sobre nosotros</h1>
         <div className='parrafo'>
-          Somos un grupo de cuatro emprendedores que buscan montar un negocio de comida saludable para mejorar el estilo de vida de las personas y concientizarlos de no generar residuos,
+        <p className='inseider'>
+        Somos un grupo de cuatro emprendedores que buscan montar un negocio de comida saludable para mejorar el estilo de vida de las personas y concientizarlos de no generar residuos,
           ya que lo que nos hace destacar además de la comida saludable,
           es que nosotros vendemos la comida por cantidad ahorrando desperdicios de comida
+        </p>
         </div>
-          <picture ><img className='imagen1' src="https://d1di2lzuh97fh2.cloudfront.net/files/3u/3ue/3uejbi.png?ph=19e3327c9f" alt="" /></picture>
+        <div className='imagenes'>
+        <picture ><img className='imagen1' src="https://d1di2lzuh97fh2.cloudfront.net/files/3u/3ue/3uejbi.png?ph=19e3327c9f" alt="" /></picture>
           <picture><img className='imagen2' src="https://d1di2lzuh97fh2.cloudfront.net/files/44/44w/44wuy9.png?ph=19e3327c9f" alt="" /></picture>
+        </div>
           <div className='parrafo2'>
             <h3 className='titulo2'>Nuestro ODS y mas informacion</h3>
             <p className='parrafo-ods'> 
