@@ -4,9 +4,9 @@ body, html {
   padding: 0;
 }
 
-/* Estilo de la barra de navegación */
+
 .navegacion {
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(29, 27, 27);
   font-size:30px ;
 }
 
