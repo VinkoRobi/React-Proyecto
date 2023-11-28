@@ -5,7 +5,7 @@ import Productos from './productos';
 import Categoria from './Categoria';
 import Contacto from './contacto';
 import Home from './HOME';
-import Cesta from './Cesta';
+import Cesta from './cesta';
 import { CarritoProvider } from './CarritoContext';
 import Sobrenosotros from './Sobrenosotros';
 import { products } from './productos.json';
