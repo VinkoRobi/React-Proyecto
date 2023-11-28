@@ -1,13 +1,10 @@
 import { defineConfig } from 'vite';
 import reactSWC from '@vitejs/plugin-react-swc';
 
-// https://vitejs.dev/config/
-export default defineConfig({
+// vite.config.js
+export default {
   plugins: [reactSWC()],
-  resolve: {
-    alias: {
-      // Ajusta la ruta según la ubicación de tu archivo JSON
-      '@assets': 'src/assets',
-    },
+  build: {
+    outDir: 'dist', // Directorio de salida
   },
-});
+};
