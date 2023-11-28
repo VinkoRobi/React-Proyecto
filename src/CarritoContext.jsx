@@ -1,4 +1,3 @@
-// CarritoContext.js
 import React, { createContext, useContext, useReducer } from 'react';
 
 const CarritoContext = createContext();
@@ -19,6 +18,13 @@ const carritoReducer = (state, action) => {
         ...state,
         productos: state.productos.filter(producto => producto.id !== action.payload.id),
       };
+    case 'ACTUALIZAR_PRODUCTO':
+      return {
+        ...state,
+        productos: state.productos.map(producto =>
+          producto.id === action.payload.id ? action.payload : producto
+        ),
+      };
     default:
       return state;
   }
@@ -28,7 +34,13 @@ const CarritoProvider = ({ children }) => {
   const [state, dispatch] = useReducer(carritoReducer, initialState);
 
   const agregarProductoAlCarrito = (producto) => {
-    dispatch({ type: 'AGREGAR_PRODUCTO', payload: producto });
+    const productoExistente = state.productos.find(p => p.id === producto.id);
+
+    if (productoExistente) {
+      dispatch({ type: 'ACTUALIZAR_PRODUCTO', payload: producto });
+    } else {
+      dispatch({ type: 'AGREGAR_PRODUCTO', payload: producto });
+    }
   };
 
   const eliminarProductoDelCarrito = (producto) => {
@@ -48,12 +60,12 @@ const CarritoProvider = ({ children }) => {
   );
 };
 
-const useCarrito = () => {
+const useCarritoContext = () => {
   const context = useContext(CarritoContext);
   if (!context) {
-    throw new Error('useCarrito debe usarse dentro de un CarritoProvider');
+    throw new Error('useCarritoContext debe usarse dentro de un CarritoProvider');
   }
   return context;
 };
 
-export { CarritoProvider, useCarrito };
+export { CarritoProvider, useCarritoContext };

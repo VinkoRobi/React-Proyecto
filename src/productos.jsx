@@ -3,11 +3,13 @@ import { Link, useNavigate } from "react-router-dom";  // Asegúrate de importar
 import './productos.css';
 import NavBar from './NavBar';
 import { AddToCartIcon } from "./Icons";
-import { useCarrito } from './CarritoContext';
+import { CarritoProvider } from "./CarritoContext";
+// productos.jsx (o donde sea que estés usando el contexto)
+import { useCarritoContext } from './CarritoContext';
 
 const Productos = ({ products }) => {
   const categoriasUnicas = [...new Set(products.map((producto) => producto.category))];
-  const { agregarProductoAlCarrito } = useCarrito();
+  const { agregarProductoAlCarrito } = useCarritoContext();
   const navigate = useNavigate();  // Asegúrate de importar useNavigate
 
   const agregarAlCarrito = (producto) => {

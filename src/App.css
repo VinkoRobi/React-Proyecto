@@ -276,7 +276,7 @@ svg {
 
 }
 .carrito{
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .labes-porciones {
   margin: 0 auto; /* Centramos el formulario */
@@ -306,4 +306,10 @@ svg {
 
 .labes-porciones textarea {
    padding: 5px; /* Separamos la letra del interior (contenido) en los inputs de los bordes */
+}
+.papa-asada-button {
+ margin-top: 91px;
+}.precio-final{
+  color: #457c2c;
+  font-size: 30px;
 }

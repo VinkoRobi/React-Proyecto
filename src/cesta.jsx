@@ -2,10 +2,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
-import { useCarrito } from './CarritoContext';
-import './cesta.css'
+import { useCarritoContext } from './CarritoContext';
+import './cesta.css';
+
 const Cesta = () => {
-  const { productos, eliminarProductoDelCarrito } = useCarrito();
+  const { productos, eliminarProductoDelCarrito } = useCarritoContext();
 
   if (!productos || productos.length === 0) {
     return (
@@ -43,6 +44,8 @@ const Cesta = () => {
             )}
             <div className="ppc">
               <p className="cesta-precio">Precio: ${producto.price}</p>
+              {/* Mostrar la cantidad de gramos seleccionados */}
+              <p className="cesta-gramos">Gramos seleccionados: {producto.gramosSeleccionados}</p>
               <button className='boton-eliminacion' onClick={() => eliminarProductoDelCarrito(producto)}>
                 Quitar del Carrito
               </button>
