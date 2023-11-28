@@ -7,8 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // Ajusta la ruta según la ubicación de tu archivo JSON
-      '@assets': '/src/assets',
+      '@assets': 'src/assets',
     },
   },
 });
-
