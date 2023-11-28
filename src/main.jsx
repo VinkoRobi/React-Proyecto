@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Productos from './productos';
 import Categoria from './Categoria';
-import Contacto from './Contacto';
+import Contacto from './contacto';
 import Home from './HOME';
 import Cesta from './Cesta';
 import { CarritoProvider } from './CarritoContext';
