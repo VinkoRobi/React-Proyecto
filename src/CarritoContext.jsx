@@ -1,4 +1,4 @@
-// CarritoContext.jsx
+// CarritoContext.js
 import React, { createContext, useContext, useReducer } from 'react';
 
 const CarritoContext = createContext();

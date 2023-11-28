@@ -3,7 +3,16 @@ body, html {
   margin: 0;
   padding: 0;
 }
-
+.boton-Contacto2{
+  background-color: #457c2c;
+  color: white;
+  width: 15%;
+  height: 80px;
+  margin-left: 40px;
+  border-radius: 40px;
+  border: #457c2c;
+  font-size: 30px;
+}
 
 .navegacion {
   background-color: rgb(29, 27, 27);
@@ -265,4 +274,36 @@ svg {
   height: 60px;
   color: white;
 
+}
+.carrito{
+  margin-top: 30px;
+}
+.labes-porciones {
+  margin: 0 auto; /* Centramos el formulario */
+  width: 300px;   /* Sin ancho no podemos centrar el formulario */
+  background-color: white; /* Color blanco para el formulario */
+}
+.labes-porciones{
+  margin: 0 auto; /* Centramos el formulario */
+  width: 300px;   /* Sin ancho no podemos centrar el formulario */
+  background-color: white; /* Color blanco para el formulario */
+  padding: 2px; /* separamos los bordes del form del resto de elementos */
+}
+.labes-porciones {
+  margin: 0 auto; /* Centramos el formulario */
+  width: 300px;   /* Sin ancho no podemos centrar el formulario */
+  background-color: white; /* Color blanco para el formulario */
+  padding: 2px; /* separamos los bordes del form del resto de elementos */
+  border-radius: 10px; /* Redondeamos los bordes del form */
+}
+.labes-porciones {
+  margin: 0 auto; /* Centramos el formulario */
+  width: 300px;   /* Sin ancho no podemos centrar el formulario */
+  background-color: white; /* Color blanco para el formulario */
+  padding: 2px; /* separamos los bordes del form del resto de elementos */
+  border-radius: 10px; /* Redondeamos los bordes del form */
+}
+
+.labes-porciones textarea {
+   padding: 5px; /* Separamos la letra del interior (contenido) en los inputs de los bordes */
 }

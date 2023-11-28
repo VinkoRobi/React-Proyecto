@@ -17,7 +17,7 @@ const Sobrenosotros = () => {
         </ul>
       </nav>
       
-      <h1 className='titulo-sobrenosotros'>Sobre nosotros</h1>
+      <h1 className='Titulo-Sobrenosotros'>Sobre nosotros</h1>
         <div className='parrafo'>
         <p className='inseider'>
         Somos un grupo de cuatro emprendedores que buscan montar un negocio de comida saludable para mejorar el estilo de vida de las personas y concientizarlos de no generar residuos,
@@ -26,8 +26,8 @@ const Sobrenosotros = () => {
         </p>
         </div>
         <div className='imagenes'>
-        <picture ><img className='imagen1' src="https://d1di2lzuh97fh2.cloudfront.net/files/3u/3ue/3uejbi.png?ph=19e3327c9f" alt="" /></picture>
-          <picture><img className='imagen2' src="https://d1di2lzuh97fh2.cloudfront.net/files/44/44w/44wuy9.png?ph=19e3327c9f" alt="" /></picture>
+        <picture ><img className='imagen1' src="https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000105-7d06a7d06b/B339582C-490E-4353-8410-49006C431364.webp?ph=19e3327c9f" alt="" /></picture>
+          <picture><img className='imagen2' src="https://19e3327c9f.cbaul-cdnwnd.com/6b3ecc07b54b512957abe515e83846d9/200000107-484fd484fe/DA06A03B-0F2A-468A-9ACB-762F165A56FE.webp?ph=19e3327c9f" alt="" /></picture>
         </div>
           <div className='parrafo2'>
             <h3 className='titulo2'>Nuestro ODS y mas informacion</h3>
@@ -53,9 +53,14 @@ const Sobrenosotros = () => {
              Nos puedes encontrar de:
              <br />
              <br />
-             Lunes a Viernes 12:00 a 18:00
+             Envios a todo Guayaquil
              <br />
-             Sabados y Domingos 12:00 a 17:00
+             <br />
+             
+             Si tienes alguna duda, no olvide en contactarnos al correo:
+             <br />
+             <br />
+             donmackay197@gmail.com
             </p>
           </div>
 

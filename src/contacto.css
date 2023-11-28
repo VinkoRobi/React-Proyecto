@@ -1,45 +1,95 @@
 .navegacion {
-    background-color: rgb(29, 27, 27);
-    font-size:30px ;
-  }
-  
-  .navegacion ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    width: 100%; /* Ocupar el 100% del ancho de la barra de navegación */
-  }
-  
-  .navegacion li {
-    display: inline;
-  }
-  
-  .navegacion a {
-    text-decoration: none;
-    color: #f3f3f3; /* Cambia esto según tus necesidades */
-    padding: 5px;
-    display: block;
-  }
-  
-  /* Hover abajo verde */
-  .navegacion a:hover {
-    border-bottom: 3px solid #00ff00; /* Verde */
-  }
-  .titulo-contacto{
-    color: #457c2c;
-    font-size: 50px;
-  }
-  .titulo-contacto::after{
-    display: block;
-    content: '_';
-    margin-top: -50px;
-  }
-  .contactos{
-    margin-left: 40%;
-  }
-  .ubi{
-    font-size: 30px;
-    color: gray;
-  }
+  background-color: rgb(29, 27, 27);
+  font-size: 30px;
+}
+
+.navegacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navegacion li {
+  display: inline;
+}
+
+.navegacion a {
+  text-decoration: none;
+  color: #f3f3f3;
+  padding: 5px;
+  display: block;
+}
+
+.navegacion a:hover {
+  border-bottom: 3px solid #00ff00;
+}
+
+.titulo-contacto {
+  color: #457c2c;
+  font-size: 50px;
+  margin-top: 10px;
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.titulo-contacto::after {
+  display: block;
+  content: '_';
+  margin-top: -20px; /* Ajusta según sea necesario */
+}
+
+.contactos {
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  font-size: 20px;
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.ubi {
+  font-size: 25px;
+  margin-top: -20px;
+  color: gray;
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.icon-ubi {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px; /* Ajusta según sea necesario */
+}
+
+.telefono {
+  display: flex;
+  color: gray;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.ws {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px; /* Ajusta según sea necesario */
+}
+
+.igs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; 
+  gap: 20px;
+}
+.contactos{
+  margin-left: 30%;
+  margin-top: 10px;
+}
+.buldozer{
+  margin-top: -28%;
+  margin-left: 200px;
+  height: 600px;
+  width: 700px;
+}
