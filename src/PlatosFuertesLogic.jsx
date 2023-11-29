@@ -8,12 +8,14 @@ const usePlatosFuertesLogic = (
 ) => {
   const [gramosSeleccionados, setGramosSeleccionados] = useState(100);
   const [cantidadEsparragos, setCantidadEsparragos] = useState(0);
-  const [cantidadVerduras, setCantidadVerduras] = useState(0);
+  const [tamanoSeleccionado, setTamanoSeleccionado] = useState("pequeno");
   const precioPor100g = 3; // Ajusta este valor según tus necesidades
-  const [precioFinal, setPrecioFinal] = useState(0);
+  const [precioFinal, setPrecioFinal] = useState(producto.price);
+  const [cantidadVerduras, setCantidadVerduras] = useState(0);
+
+
 
   useEffect(() => {
-    // Actualiza el precio final cuando cambian los gramos seleccionados
     const precioActualizado = (
       (gramosSeleccionados / 100) * precioPor100g
     ).toFixed(2);
@@ -22,29 +24,23 @@ const usePlatosFuertesLogic = (
 
   const handleGramosChange = (gramos) => {
     setGramosSeleccionados(gramos);
-    // Realiza otras actualizaciones según sea necesario
   };
 
   const handleCantidadEsparragosChange = (cantidad) => {
     setCantidadEsparragos(cantidad);
-    // Implementa otras actualizaciones según sea necesario
   };
 
   const handleCantidadVerdurasChange = (cantidad) => {
     setCantidadVerduras(cantidad);
-    // Implementa otras actualizaciones según sea necesario
   };
 
   const agregarAlCarrito = () => {
-    // Implementa la lógica para agregar el producto al carrito
     agregarProductoAlCarrito({
       ...producto,
-      cantidad: gramosSeleccionados, // O la propiedad que desees, ajusta según tus necesidades
+      cantidad: gramosSeleccionados,
       // Otras propiedades del producto que quieras agregar al carrito
     });
   };
-
-  // ... Resto del código ...
 
   return {
     gramosSeleccionados,
@@ -54,8 +50,33 @@ const usePlatosFuertesLogic = (
     handleCantidadEsparragosChange,
     handleCantidadVerdurasChange,
     precioFinal,
-    agregarAlCarrito, // Asegúrate de incluir agregarAlCarrito en el objeto de retorno
+    agregarAlCarrito,
   };
 };
 
 export default usePlatosFuertesLogic;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
