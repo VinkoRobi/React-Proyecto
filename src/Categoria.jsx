@@ -12,7 +12,7 @@ import usePlatosFuertesLogic from "./PlatosFuertesLogic";
 const Categoria = ({ category, products }) => {
   const { agregarProductoAlCarrito } = useCarritoContext();
   const navigate = useNavigate();
-  const [tamanoSeleccionado, setTamanoSeleccionado] = useState("pequeno");
+  const [tamSeleccionado, setTamanoSeleccionado] = useState("pequeno");
   const productosCategoria = products.filter(
     (producto) => producto.category === category
   );
@@ -30,7 +30,6 @@ const Categoria = ({ category, products }) => {
       : useProductoLogic(producto, category, agregarProductoAlCarrito, navigate);
 
   const {
-    estaEnElCarrito,
     agregarAlCarrito,
     gramosSeleccionados,
     cantidadEsparragos,
@@ -154,7 +153,7 @@ const Categoria = ({ category, products }) => {
         <div>
           <label>Tamaño: </label>
           <select
-            value={tamanoSeleccionado}
+            value={tamSeleccionado}
             onChange={(e) => setTamanoSeleccionado(e.target.value)}
           >
             <option value="pequeno">Pequeño</option>

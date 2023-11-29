@@ -32,8 +32,8 @@ const useProductoLogic = (producto, category, agregarProductoAlCarrito, navigate
   
   const handleCantidadChange = (cantidad) => {
     setCantidadSeleccionada(cantidad);
-
-    const precioProducto = calcularPrecioProducto(producto, cantidad, tamanoSeleccionado);
+    console.log(cantidad, producto, tamanoSeleccionado);
+    const precioProducto = calcularPrecioProducto(producto, cantidad, tamanoSeleccionado, cantidad);
     setPrecioFinal(precioProducto);
   };
 
@@ -46,9 +46,9 @@ const useProductoLogic = (producto, category, agregarProductoAlCarrito, navigate
   };
 
   const calcularPrecioProducto = (producto, cantidad, tamano, gramosSeleccionados) => {
-    console.log(gramosSeleccionados,producto.price)
     if (producto.category === "Porciones") {
-      return (gramosSeleccionados / 100) * 1; // Ajusta la fórmula según tus necesidades
+      console.log(gramosSeleccionados);
+      return ((gramosSeleccionados / 100) * 1) * producto.price; // Ajusta la fórmula según tus necesidades
     } else if (producto.category === "Bebidas" || producto.category === "Batidos") {
       const preciosPredeterminados = {
         pequeno: 5,

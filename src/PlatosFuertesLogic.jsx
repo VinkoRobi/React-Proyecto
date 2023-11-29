@@ -3,12 +3,10 @@ import { useState, useEffect } from "react";
 
 const usePlatosFuertesLogic = (
   producto,
-  agregarProductoAlCarrito,
-  navigate
+  agregarProductoAlCarrito
 ) => {
   const [gramosSeleccionados, setGramosSeleccionados] = useState(100);
   const [cantidadEsparragos, setCantidadEsparragos] = useState(0);
-  const [tamanoSeleccionado, setTamanoSeleccionado] = useState("pequeno");
   const precioPor100g = 3; // Ajusta este valor según tus necesidades
   const [precioFinal, setPrecioFinal] = useState(producto.price);
   const [cantidadVerduras, setCantidadVerduras] = useState(0);
@@ -16,11 +14,12 @@ const usePlatosFuertesLogic = (
 
 
   useEffect(() => {
-    const precioActualizado = (
-      (gramosSeleccionados / 100) * precioPor100g
-    ).toFixed(2);
-    setPrecioFinal(parseFloat(precioActualizado));
-  }, [gramosSeleccionados]);
+      const precioActualizado = (
+        ((gramosSeleccionados / 100) * (gramosSeleccionados == 100 ? 0 : precioPor100g)) + producto.price
+      ).toFixed(2);
+      console.log(gramosSeleccionados, producto);
+      setPrecioFinal(parseFloat(precioActualizado));
+  }, [gramosSeleccionados, producto]);
 
   const handleGramosChange = (gramos) => {
     setGramosSeleccionados(gramos);
