@@ -148,20 +148,50 @@ const Categoria = ({ category, products }) => {
           )}
         </div>
       )}
+       {(category === "Bebidas" || category === "Batidos") && (
+  <div>
+    <label>Tamaño: </label>
+    <select
+      value={tamSeleccionado}
+      onChange={(e) => setTamanoSeleccionado(e.target.value)}
+    >
+      <option value="pequeno">Pequeño</option>
+      <option value="mediano">Mediano</option>
+      <option value="grande">Grande</option>
+    </select>
+  </div>
+)}
+ <div key={producto.id} className="producto">
+{/* ... */}
+{category === "Ensaladas" && (
+  <div>
+    <label>Tamaño: </label>
+    <select
+      value={tamanoSeleccionado}
+      onChange={(e) => handleTamanoChange(e)}
+    >
+      <option value="pequeno">Pequeño</option>
+      <option value="mediano">Mediano</option>
+      <option value="grande">Grande</option>
+    </select>
+    {producto.Extra && (
+      <div>
+        <label>Rango: </label>
+        <input
+          type="range"
+          min={100}
+          max={500}
+          step={100}
+          value={gramosSeleccionados}
+          // onChange={(e) => handleGramosChange(e)}
+        />
+        <p>{gramosSeleccionados} gramos</p>
+      </div>
+    )}
+  </div>
+)}
+</div>
 
-      {(category === "Bebidas" || category === "Batidos") && (
-        <div>
-          <label>Tamaño: </label>
-          <select
-            value={tamSeleccionado}
-            onChange={(e) => setTamanoSeleccionado(e.target.value)}
-          >
-            <option value="pequeno">Pequeño</option>
-            <option value="mediano">Mediano</option>
-            <option value="grande">Grande</option>
-          </select>
-        </div>
-      )}
 
       <div>
         <button
@@ -187,3 +217,11 @@ const Categoria = ({ category, products }) => {
 };
 
 export default Categoria;
+
+
+
+
+//////////////////////
+
+
+

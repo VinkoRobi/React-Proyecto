@@ -313,3 +313,11 @@ svg {
   color: #457c2c;
   font-size: 30px;
 }
+.contenedor-paypal{
+  margin-left: 500px;
+}
+.texto-paypal{
+  color: #457c2c;
+  font-size: 30px;
+  display: block;
+}

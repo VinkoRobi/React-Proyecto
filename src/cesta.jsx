@@ -57,6 +57,9 @@ const Cesta = () => {
       <Link to="/productos" className="cesta-seguir-comprando">
         Seguir comprando
       </Link>
+      <div className='contenedor-paypal'><p className='texto-paypal'>Al tener Todos sus Productos seleccionados envie su pago a esta cuenta de paypal(DonMackay@gmail.com)(Tambien se acepta tarjeta en paypal)</p>
+      <p></p>
+      </div>
     </div>
   );
 };

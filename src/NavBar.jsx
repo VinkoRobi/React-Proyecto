@@ -7,7 +7,7 @@ import './App.css'
 const NavBar = () => {
   return (
     <nav className='navegacion'>
-      <h1 className='titulo'>Don Makai</h1>
+      <h1 className='titulo'>Don Mackay</h1>
       <ul>
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/sobrenosotros">Sobre Nosotros</Link></li>
